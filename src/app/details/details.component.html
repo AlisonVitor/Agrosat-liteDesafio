@@ -1,0 +1,12 @@
+ 
+    <h2>Detalhes </h2>
+        
+    <div class="id" *ngFor="let farm of farms" >
+    <p>{{farm.name}}</p>
+    <p>{{farm.geomtry}}</p>
+    <p>{{farm.area}}</p>
+    <p>{{farm.centroid}}</p>
+    <p>{{farm.owner_id}}</p>
+
+    </div>
+    <button routerLink="">Voltar</button>

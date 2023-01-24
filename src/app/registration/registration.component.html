@@ -1,0 +1,40 @@
+
+    <h5 class="card-header">Adicionar Fazenda</h5>
+        <form id="add-form" (ngSubmit)="saveFarm(f)" #f="ngForm" novalidate>
+
+          <div class="form-group">
+              <label for="fazenda">Fazenda</label>
+              <input type="text" [(ngModel)]="farm.name" id="fazenda" name="fazenda" #fazenda="ngModel" required class="form-control"  placeholder="Digite o nome da fazenda">
+            
+          </div>
+          
+          <div class="form-group">
+              <label for="area">Área</label>
+              <input type="number" [(ngModel)]="farm.area" id="area" name="area" #area="ngModel" required class="form-control"  placeholder="Digite a area">
+              
+          </div>
+
+          <div class="form-group">
+              <label for="centroide">Centróide</label>
+              <input type="number" [(ngModel)]="farm.centroid" id="centroide" name="centroide" #centroide="ngModel" required class="form-control"  placeholder="Digite o centroide">
+              
+          </div>
+
+          <div class="form-group">
+            <label for="geometria">Geometria</label>
+            <input type="number" [(ngModel)]="farm.geomtry" id="geometria" name="geometria" #geometria="ngModel" required class="form-control"  placeholder="Digite a geometria">
+           
+        </div>
+
+        <div class="form-group">
+            <label for="owner_id">ID do dono</label>
+            <input type="number" [(ngModel)]="owner_id" id="owner" name="owner" #owner_id="ngModel" required class="form-control"  placeholder="Digite o id do dono">
+          
+        </div>
+
+
+          <button type="submit">Salvar</button>
+          <button routerLink="">Voltar</button>
+
+        </form>
+ 
